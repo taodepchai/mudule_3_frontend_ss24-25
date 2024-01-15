@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = +prompt("nhap 1 so");
+      let a = new Array();
+      
+        let div = 2;
+        let i = 0;
+        let d = 0;
+        while (n > 1) {
+          while (n % div === 0) {
+            a[i] = div;
+            n /= div;
+            i++;
+            d++;
+          }
+          div++;
+        }
+        for (i=0;i<d;i++){
+          console.log(a[i]);
+        }
+    </script>
+  </body>
+</html>

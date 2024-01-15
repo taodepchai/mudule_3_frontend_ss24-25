@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function check(n) {
+        let s = String(n);
+        let d = new Set(s);
+        if (s.length === d.size){
+            return true;
+        } else return false;
+        
+      }
+        let a = +prompt("nhap so dau");
+        let b = +prompt("nhap so cuoi");
+      for (let i = a; i <= b; i++) {
+        if (check(i)) document.write(i, "  ");
+      }
+    </script>
+  </body>
+</html>

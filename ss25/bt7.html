@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function gcd(a, b) {
+        while (a != b) {
+          if (a > b) a = a - b;
+          else b = b - a;
+        }
+
+        return a;
+      }
+      function lcm(a, b) {
+        let temp = gcd(a, b);
+        return (a * b) / temp;
+      }
+      let a = +prompt("nhap a");
+      let b = +prompt("nhap b");
+      let c = +prompt("nhap c");
+      let d = +prompt("nhap d");
+      console.log(lcm(lcm(a, b), lcm(c, d)));
+    </script>
+  </body>
+</html>
